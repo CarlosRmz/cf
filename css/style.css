@@ -1,0 +1,134 @@
+*{
+  border: 1px solid red !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #474747;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  color: rgb(185, 122, 87);
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(185, 122, 87);
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 3px;
+  height: 32px;
+}
+
+.sn_ref{
+  position: relative;
+  /*(1000 - height of image2) / 2*/
+  top:225px;
+  /*(200 - width of image2) / 2*/
+  left: 75px;
+}
+
+.logo{
+  padding: 0px;
+}
+
+.image-team{
+  /*padding: 0px;*/
+  width: 242.5px;
+  height: 600px;
+  position: absolute;
+  /*visibility: hidden; */
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.btn{
+  background-color: #FFFFFF;
+  /*background-color: transparent;*/
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+}
+
+.col-sm-3{
+  padding: 0px;
+}
+
+.cont_img, .row_cont{
+  width: 970px;
+  height: 600px;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  /*top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;*/
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.card__front {
+  background-color: #ff5078;
+}
+
+.card__back {
+  background-color: #1e1e1e;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
