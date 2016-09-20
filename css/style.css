@@ -1,6 +1,6 @@
-*{
+/**{
   border: 1px solid red !important;
-}
+}*/
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -13,11 +13,6 @@ a:link {
 
 a:hover{
     text-decoration:none;;
-}
-
-.carrusel{
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 h3 span{
