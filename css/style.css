@@ -1,15 +1,10 @@
-*{
+/**{
   border: 1px solid red !important;
-}
+}*/
 
 body {
   font-family: 'Roboto', sans-serif;
-  padding-top: 70px;
-}
-
-.navbar-brand{
- width: auto;
- height: auto;
+  padding-top: 50px;
 }
 
 a:link {
@@ -18,6 +13,11 @@ a:link {
 
 a:hover{
     text-decoration:none;;
+}
+
+.carrusel{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h3 span{
